@@ -44,10 +44,6 @@ public class DotLand {
     }
   }
 
-  public void reset() {
-    mDots.clear();
-  }
-
   public boolean isHit(final Coordinates theDot, int margin) {
     for (Coordinates dot : mDots) {
       if (dot.isClose(theDot, margin)) {

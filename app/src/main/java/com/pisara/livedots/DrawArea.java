@@ -5,9 +5,6 @@ import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.view.View;
 
-/**
- * Created by antti on 8/6/16.
- */
 public class DrawArea extends View {
 
   private static final int NUMBER_OF_DOTS = 50;
@@ -28,11 +25,6 @@ public class DrawArea extends View {
   public DrawArea(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
     init(context);
-  }
-
-  public void reset() {
-    mAreDimensionSet = false;
-    mDotLand.reset();
   }
 
   public boolean isClose(Coordinates coordinates, int margin) {
